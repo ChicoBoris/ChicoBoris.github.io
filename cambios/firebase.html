@@ -44,6 +44,14 @@
 
         console.log(nombre,edad);
 
+        push(
+            ref(database,'septimo'),
+            {
+                name:nombre,
+                age: edad,
+            }
+        );
+
     }
   </script>
 </html>
