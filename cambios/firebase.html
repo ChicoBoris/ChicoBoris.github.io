@@ -17,22 +17,23 @@
 
 </body>
 <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
-    import { getDatabase, ref, push, onValue, remove} from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyDakF_ODr6uBUIpfdJF3-QbaCEWsjcVIlc",
-      authDomain: "proyecto-tiban.firebaseapp.com",
-      databaseURL: "https://proyecto-tiban-default-rtdb.firebaseio.com",
-      projectId: "proyecto-tiban",
-      storageBucket: "proyecto-tiban.appspot.com",
-      messagingSenderId: "563744873955",
-      appId: "1:563744873955:web:7fde9e8ede1947aa2994d6"
-    };
+         // Import the functions you need from the SDKs you need
+         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+            import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+              apiKey: "AIzaSyBMJsVpnbOwVOiVNbTZScZdet9qlGigDL0",
+              authDomain: "conexion-8ec0d.firebaseapp.com",
+              databaseURL: "https://conexion-8ec0d-default-rtdb.firebaseio.com",
+              projectId: "conexion-8ec0d",
+              storageBucket: "conexion-8ec0d.appspot.com",
+              messagingSenderId: "679910299749",
+              appId: "1:679910299749:web:9800b464879628b4850e8c"
+            };
+          
   
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
@@ -45,7 +46,7 @@
         console.log(nombre,edad);
 
         push(
-            ref(database,'septimo'),
+            ref(database,'Tiban'),
             {
                 name:nombre,
                 age: edad,
